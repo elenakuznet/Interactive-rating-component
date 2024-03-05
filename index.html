@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -34,38 +33,48 @@
   <body>
     <div class="container">
       <div class="rating">
-        <div class="rating__circle">
-          <img src="images/icon-star.svg" alt="" />
+        <div class="rating__wrapper">
+          <div class="rating__circle">
+            <img src="images/icon-star.svg" alt="" />
+          </div>
+
+          <!-- Rating state start -->
+          <h2 class="rating__title title">How did we do?</h2>
+          <p class="rating__text text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="rating__select">
+            <ul class="rating__list">
+              <li class="rating__circle">1</li>
+              <li class="rating__circle">2</li>
+              <li class="rating__circle">3</li>
+              <li class="rating__circle">4</li>
+              <li class="rating__circle">5</li>
+            </ul>
+          </div>
+
+          <button class="rating__button">Submit</button>
         </div>
-
-        <!-- Rating state start -->
-        <h1 class="rating__title">How did we do?</h1>
-        <p class="rating__text">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <div class="rating__select">
-          <ul class="rating__list">
-            <li class="rating__circle">1</li>
-            <li class="rating__circle">2</li>
-            <li class="rating__circle">3</li>
-            <li class="rating__circle">4</li>
-            <li class="rating__circle">5</li>
-          </ul>
-        </div>
-
-        <button class="rating__button">Submit</button>
-
         <!-- Rating state end -->
+
+        <div class="thanks hidden">
+          <div class="thanks__wrapper">
+            <img src="images/illustration-thank-you.svg" alt="" />
+            <div>
+              <p>You selected <span class="rating__result"></span> out of 5</p>
+            </div>
+            <h2 class="thanks__title title">Thank you!</h2>
+            <p class="thanks__text text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
 
     <!-- Thank you state end -->
 
