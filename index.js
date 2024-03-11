@@ -20,7 +20,7 @@ ratingNumbers.forEach((number) => {
 
 ratingBtn.addEventListener("click", () => {
   if (ratingResult.innerText) {
-    thanksWrapper.classList.remove("hidden");
-    ratingWrapper.classList.add("hidden");
+    thanksWrapper.classList.toggle("hidden");
+    ratingWrapper.classList.toggle("hidden");
   }
 });

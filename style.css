@@ -78,8 +78,6 @@ iframe {
 
 .rating__wrapper {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   gap: 20px;
   flex-direction: column;
 }
@@ -96,12 +94,14 @@ iframe {
   /* transition: background 0.3s ease-in; */
 }
 
-.rating__circle:hover {
+.rating__circle:not(.active):hover {
   background-color: hsl(216, 12%, 54%);
+  color: white;
 }
 
 .rating__circle:focus {
   background-color: hsl(216, 12%, 54%);
+  color: white;
 }
 
 .title {
@@ -138,6 +138,7 @@ iframe {
 
 .active {
   background-color: hsl(25, 97%, 53%);
+  color: white;
 }
 
 .hidden {
